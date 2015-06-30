@@ -3,9 +3,9 @@ About
 These are the slides for the first meeting of the machine learning students
 group at KIT.
 
-It will be at TODO, the TODO. June 2015 at TODO:TODO in TODO.
+It will be at Thursday, the 16. June 2015 at 17:30 in TODO.
 
-The compiled PDF is in the LaTeX folder.
+The [compiled PDF](https://github.com/ML-KIT/presentations/raw/master/2015-07/LaTeX/2015-07-ml-kick-off.pdf) is in the LaTeX folder.
 
 
 KIT-Style
