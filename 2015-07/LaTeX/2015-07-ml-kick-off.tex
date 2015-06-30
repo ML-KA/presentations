@@ -1,0 +1,31 @@
+\documentclass[hyperref={pdfpagelabels=false},usepdftitle=false]{beamer}
+\usepackage{../templates/myStyle}
+
+\begin{document}
+\selectlanguage{english}
+
+\title{\titleText}
+%\subtitle{Pixelweise Klassifikation von Straße}
+\author{\tutor}
+\date{TODO. Juli 2015}
+\subject{Machine Learning}
+
+\frame{\titlepage}
+
+\frame{
+    \frametitle{Contents}
+    \setcounter{tocdepth}{2}
+    \tableofcontents
+    \setcounter{tocdepth}{2}
+}
+
+% \AtBeginSection[]{
+%    \InsertToC[sections={\thesection}]  % shows only subsubsections of one subsection
+% }
+
+\input{introduction}
+\input{ziele}
+\input{verwaltung}
+\input{end}
+
+\end{document}
