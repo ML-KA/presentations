@@ -11,7 +11,7 @@
 * Grimm, Timo
 * Schweizer, Marvin
 * Teichmann, Marvin
-* Thoma, Martin
+* Thoma, Martin <info@martin-thoma.de>
 * Wang, Yuting
 * Zhu, Qingxiaoyang
 
@@ -41,3 +41,5 @@
 3.4 Name
     - Irgendwas Lateinisches (CML? Weiß das noch jemand?)
     - Sonst keine Konkreten vorschläge
+4. Weiteres
+    - Hinweis auf https://www.coursera.org/learn/machine-learning/home/welcome
