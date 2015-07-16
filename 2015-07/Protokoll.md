@@ -39,7 +39,8 @@
     - Kleine Gruppen (z.B. Paper reading groups) machen das selbst aus
     - Erstes Treffen im Oktober
 3.4 Name
-    - Irgendwas Lateinisches (CML? Weiß das noch jemand?)
+    - CMD (classis machinae discendi - Latein für "Gruppe/Klasse des
+      Maschinenlernens")
     - Sonst keine Konkreten vorschläge
 4. Weiteres
     - Hinweis auf https://www.coursera.org/learn/machine-learning/home/welcome
