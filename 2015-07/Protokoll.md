@@ -28,7 +28,7 @@
 3. Verwaltung
 3.1 Hochschulgruppe
     - Wir wollen eine Hochschulgruppe gründen. Darum kümmern sich
-        - 3x Marvin, Martin (noch jemand?)
+        - 3x Marvin, Matthias Stumpp, Martin (noch jemand?)
 3.2 Organisation
     - Facebook-Gruppe bleibt bestehen
     - E-Mail-Verteiler wird eingerichtet (unter https://lists.ira.uni-karlsruhe.de/mailman/listeBeantragen.pl beantragt)
