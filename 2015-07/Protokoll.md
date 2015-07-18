@@ -7,7 +7,7 @@
 ## Anwesende
 
 * Bittel, Sebastian
-* GebreMeskel, Mikael
+* Beyene, Mikael
 * Grimm, Timo
 * Schweizer, Marvin
 * Teichmann, Marvin
