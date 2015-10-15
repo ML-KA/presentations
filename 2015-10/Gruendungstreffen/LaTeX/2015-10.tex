@@ -1,0 +1,34 @@
+\documentclass[hyperref={pdfpagelabels=false},usepdftitle=false]{beamer}
+\usepackage{../templates/myStyle}
+\usepackage{bchart}
+
+\begin{document}
+\selectlanguage{english}
+
+\title{\titleText}
+%\subtitle{Pixelweise Klassifikation von Straße}
+\author{ML-KIT}
+\date{16. Juli 2015}  % TODO
+\subject{Machine Learning}
+
+\frame{\titlepage}
+
+
+% Content
+
+\frame{
+    \frametitle{TOPs}
+    \setcounter{tocdepth}{2}
+    \tableofcontents
+    \setcounter{tocdepth}{2}
+}
+
+% \AtBeginSection[]{
+%    \InsertToC[sections={\thesection}]  % shows only subsubsections of one subsection
+% }
+
+% subslides: TODO
+\input{slides}
+\input{end}
+
+\end{document}
