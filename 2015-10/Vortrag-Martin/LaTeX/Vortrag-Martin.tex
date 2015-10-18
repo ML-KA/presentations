@@ -1,0 +1,31 @@
+\documentclass[hyperref={pdfpagelabels=false},usepdftitle=false]{beamer}
+\usepackage{../templates/myStyle}
+
+\usepackage{caption}
+\captionsetup[figure]{labelformat=empty}% redefines the caption setup of the figures environment in the beamer class.
+
+
+\begin{document}
+\selectlanguage{ngerman}
+
+\title{\titleText}
+\subtitle{\href{https://github.com/ML-KA/presentations}{github.com/ML-KA/presentations}}
+\author{Martin Thoma}
+\date{28. Oktober 2015}  % TODO
+\subject{Machine Learning}
+
+\frame{\titlepage}
+
+
+% Content
+% \frame{
+%     \frametitle{Contents}
+%     \setcounter{tocdepth}{2}
+%     \tableofcontents
+%     \setcounter{tocdepth}{2}
+% }
+
+\input{slides}
+\input{end}
+
+\end{document}
