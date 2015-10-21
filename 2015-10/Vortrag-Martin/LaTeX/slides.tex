@@ -15,15 +15,19 @@
     \begin{figure}[ht]
         \begin{minipage}[b]{0.45\linewidth}
             \centering
-            \includegraphics[width=\textwidth]{../images/regression-linear-least-squares-2.png}
+            \only<1>{\includegraphics[width=\textwidth]{../images/regression-linear-least-squares-2-only-points.png}}
+            \only<2->{\includegraphics[width=\textwidth]{../images/regression-linear-least-squares-2.png}}
             \caption{Regression}
             \label{fig:Regression}
         \end{minipage}
         \hspace{0.5cm}
         \begin{minipage}[b]{0.45\linewidth}
             \centering
-            \includegraphics[width=\textwidth]{../images/clustering.png}
-            \caption{Klassifikation (überwacht) und Clustering (unüberwacht)}
+            %\only<1>{\includegraphics[width=\textwidth]{../images/classification-empty.png}}
+            %\only<2>{\includegraphics[width=\textwidth]{../images/classification-empty.png}}
+            \only<3>{\includegraphics[width=\textwidth]{../images/classification-only.png}}
+            \only<4->{\includegraphics[width=\textwidth]{../images/clustering.png}}
+            \caption{\only<-3>{Klassifikation (überwacht)}\only<4->{und Clustering (unüberwacht)}}
             \label{fig:Klassifikation}
         \end{minipage}
     \end{figure}
@@ -77,13 +81,15 @@
         \item Wie bekomme ich meine Features?
         \item Bilder: Pixel-Werte für jeden Farbkanal
         \begin{itemize}
-            \item Normalisieren auf $[0, 1]$
-            \item Farbraum? (z.B. RGB, HSV, HSL, HSI)
             \item Kleiner Skalieren? Rotieren?
+            \item Farbraum? (z.B. RGB, HSV, HSL, HSI)
+            \item Normalisieren auf $[0, 1]$
         \end{itemize}
         \item Verhältis zweier Größen
         \item Deep Learning: Auto-Encoder
     \end{itemize}
+
+    vgl. Vorlesung \enquote{Neuronale Netze}
 \end{frame}
 
 \begin{frame}{Generalisierung und Overfitting}
@@ -139,10 +145,13 @@
         \begin{minipage}[b]{0.45\linewidth}
             \begin{itemize}
                 \item \href{https://how-old.net}{how-old.net}
-                \item Gesichter in Bild finden,\\
-                      z.B. mit Sliding Window
-                \item Geschlecht klassifizieren
-                \item Regression beim Alter
+                \item \enquote{Gelöste} Aufgaben:
+                \begin{itemize}
+                    \item Gesichter in Bild finden,\\
+                          z.B. mit Sliding Window
+                    \item Geschlecht klassifizieren: \male, \female
+                    \item Regression beim Alter
+                \end{itemize}
             \end{itemize}
             \vspace{2cm}
         \end{minipage}
