@@ -14,13 +14,24 @@ Der Vortrag dient als Auftakt zu einer *Paper Diskussion Group* zum Thema *Deep 
 
 2) **Deconvolution Layer [1],[3]**: Die Faltungen des CNNs werden (approximativ) Rückgängig gemacht. Auf diese Weise erhält man Informationen, welche Bereiche und Pixel für die Klassifikation ausschlaggebend sind und kann dies zur Pixelweisen Klassifikation verwenden.
 
+In der *Paper Discussion Group* möchten wir uns mit den neuesten Entwicklungen auf dem Gebiet der *Pixelweise Klassifikation* vertiefend auseinandersetzen. 
 
-About
+
+Paper Discussion Group
 -----
 
-TODO: What are the main topics this meeting is about?
 
-The [compiled PDF](TODO) is in the LaTeX folder.
+
+
+
+
+Quellen
+-----
+
+[1] Fully Convolutional Networks for Semantic Segmentation; *Jon Long*, *Evan Shelhamer* **(CVPR 2015)**
+[2] Efficient Convolutional Neural Networks for Pixelwise Classification on Heterogeneous Hardware Systems; *Fabian Tschopp* **(ETH 2015)**
+[3] Deep Deconvolutional Networks for Scene Parsing; *Rahul Mohan* **(2014)**
+[4] Pixel-wise Segmentation of Street with Neural Networks; *Martin Thoma*, *Marvin Teichmann et al.* **(2015)**
 
 
 KIT-Style
