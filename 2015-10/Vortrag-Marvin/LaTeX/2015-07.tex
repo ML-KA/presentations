@@ -1,6 +1,11 @@
 \documentclass[hyperref={pdfpagelabels=false},usepdftitle=false]{beamer}
 \usepackage{../templates/myStyle}
 
+\usepackage{array}
+\newcolumntype{L}{>{\usebeamertemplate*{itemize item}~~}l<{}}
+
+\usepackage{listliketab}
+
 \begin{document}
 \selectlanguage{english}
 
@@ -13,29 +18,9 @@
 \frame{\titlepage}
 
 
-% Content (TODO)
-\begin{frame}{Was ist Machine Learning?}
-    \begin{block}{Definition by Tom Mitchell: ML}
-        A computer program is said to learn from \textbf{experience} $E$ with
-        respect to some class of \textbf{tasks} $T$ and \textbf{performance
-        measure} $P$, if its performance at tasks in $T$, as measured by $P$,
-        improves with experience $E$.
-    \end{block}
-\end{frame}
 
-\frame{
-    \frametitle{Contents}
-    \setcounter{tocdepth}{2}
-    \tableofcontents
-    \setcounter{tocdepth}{2}
-}
+\input{paper_dis}
 
-% \AtBeginSection[]{
-%    \InsertToC[sections={\thesection}]  % shows only subsubsections of one subsection
-% }
-
-% subslides: TODO
-\input{slides}
 \input{end}
 
 \end{document}
