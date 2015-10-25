@@ -3,12 +3,25 @@
 
 \subsection*{Pixelweise-Klassifikation}
 
-\begin{frame}{Problemstellung}
+\begin{frame}{Bildweise Klassifikation}
+
+\begin{minipage}{0.49\textwidth}
+\begin{center}
+ImageNET
+\end{center}
+\vspace{1cm}
+\end{minipage}
+\begin{minipage}{0.49\textwidth}
+\begin{center}
+MNIST
+\end{center}
+\vspace{1cm}
+\end{minipage}
 
 \end{frame}
 
 
-\begin{frame}{Anwendungen}
+\begin{frame}{Problemstellung \& Anwendungen}
 
 \begin{minipage}{0.49\textwidth}
 \begin{center}
@@ -31,24 +44,36 @@ Bildbearbeitung
 
 \end{frame}
 
-\begin{frame}{Bildweise Klassifikation}
-
-\begin{minipage}{0.49\textwidth}
-\begin{center}
-ImageNET
-\end{center}
-\vspace{1cm}
+\begin{frame}[squeeze]{Sliding-Window Ansatz}
+\vspace{-1em}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{../images/street.png}
+	%\caption{Visualization of the classification problem solved by our neural network.}
+	%\label{fig:figure}
+\end{figure}
+\vspace{-.2em}
+\begin{minipage}{0.6\textwidth}
+\centering
+\fbox{
+	\begin{tabular}{l l}
+		\multicolumn{2}{l}{\textbf{Klassifikation Netz}} \\
+		\textit{Input:} & Ein $n \times n$ Pixel \\
+						& großer Bildauschnitt. \\
+		\textit{Output:} & 1, falls der center Pixel \\
+		                 &  Straße ist.\\
+	\end{tabular}
+}
 \end{minipage}
-\begin{minipage}{0.49\textwidth}
-\begin{center}
-MNIST
-\end{center}
-\vspace{1cm}
+\begin{minipage}{0.39\textwidth}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{../images/sliding_window.png}
+	%\caption{Visualization of the classification problem solved by our neural network.}
+	%\label{fig:figure}
+\end{figure}
 \end{minipage}
 
-\end{frame}
-
-\begin{frame}{Sliding-Window Ansatz}
 
 \end{frame}
 
@@ -57,5 +82,31 @@ MNIST
 \end{frame}
 
 \begin{frame}{Deconvolution Netzwerke}
+
+\begin{minipage}[b]{0.49\textwidth}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{../images/deconv.png}
+	\caption*{\scriptsize{Funktionsweise eines Deconvolution Layers}}
+\end{figure}
+\end{minipage}
+\begin{minipage}[b]{0.49\textwidth}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{../images/heatmap.png}
+	\caption*{\scriptsize{Heatmap erzeugt durch Deconvolution Netz}}
+\end{figure}
+\end{minipage}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{../images/overall.png}
+    \caption*{\scriptsize{Aufbau eines Deconvolution Netzwerkes}}
+\end{figure}
+
+
+
+
+
 
 \end{frame}
