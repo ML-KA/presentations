@@ -12,49 +12,57 @@
 \end{frame}
 
 \begin{frame}{Problemtypen}
-    \begin{figure}[ht]
         \begin{minipage}[b]{0.45\linewidth}
+            \begin{figure}
             \centering
             \only<1>{\includegraphics[width=\textwidth]{../images/regression-linear-least-squares-2-only-points.png}}
             \only<2->{\includegraphics[width=\textwidth]{../images/regression-linear-least-squares-2.png}}
             \caption{Regression}
             \label{fig:Regression}
+            \end{figure}
         \end{minipage}
         \hspace{0.5cm}
         \begin{minipage}[b]{0.45\linewidth}
+        \begin{figure}
             \centering
-            %\only<1>{\includegraphics[width=\textwidth]{../images/classification-empty.png}}
-            %\only<2>{\includegraphics[width=\textwidth]{../images/classification-empty.png}}
-            \only<3>{\includegraphics[width=\textwidth]{../images/classification-only.png}}
-            \only<4->{\includegraphics[width=\textwidth]{../images/clustering.png}}
-            \caption{\only<-3>{Klassifikation (überwacht)}\only<4->{und Clustering (unüberwacht)}}
+            \only<3>{\vspace*{-0.5cm}\includegraphics[width=\textwidth]{../images/classification-only.png}}
+            \only<4>{\includegraphics[width=\textwidth]{../images/clustering-grey.png}}
+            \only<5->{\includegraphics[width=\textwidth]{../images/clustering.png}}
+            \caption{\only<3>{Klassifikation (überwacht)}\only<4->{und Clustering (unüberwacht)}}
             \label{fig:Klassifikation}
+            \end{figure}
         \end{minipage}
-    \end{figure}
 \end{frame}
 
 
 \begin{frame}{MNIST - Ziffern klassifizieren}
-    \begin{figure}[ht]
-        \begin{minipage}[b]{0.45\linewidth}
-            \begin{itemize}
-                \item Klassen: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
-                \item \num{60000} Trainigsdaten, \num{10000} Testdaten
-                      auf \href{http://yann.lecun.com/exdb/mnist/}{yann.lecun.com/exdb/mnist}
-                \item Algorithmen zur Klassifizierung: \textbf{SVMs} (Support Vector Machines),
-                      \textbf{CNNs} (Convolutional Neural Networks),
-                      $k$~Nearest Neighbors (siehe \href{http://martin-thoma.com/k-nearest-neighbor-classification-interactive-example/}{tinyurl.com/knn-interact})
-            \end{itemize}
-        \end{minipage}
-        \hspace{0.5cm}
-        \begin{minipage}[b]{0.45\linewidth}
-            \begin{figure}
-                \centering
-                \includegraphics[width=\textwidth]{../images/mnist-2.png}
-                \caption{Datensatz der Klasse \enquote{2}; $\SI{28}{\pixel} \times \SI{28}{\pixel}$}
-                \label{fig:spline}
-            \end{figure}
-        \end{minipage}
+    \begin{minipage}[b]{0.45\linewidth}
+        \begin{itemize}
+            \item Klassen: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+            \item \num{60000} Trainigsdaten, \num{10000} Testdaten
+                  auf \href{http://yann.lecun.com/exdb/mnist/}{yann.lecun.com/exdb/mnist}
+            \item Algorithmen zur Klassifizierung: \textbf{SVMs} (Support Vector Machines),
+                  \textbf{CNNs} (Convolutional Neural Networks),
+                  $k$~Nearest Neighbors (siehe \href{http://martin-thoma.com/k-nearest-neighbor-classification-interactive-example/}{tinyurl.com/knn-interact})
+        \end{itemize}
+    \end{minipage}
+    \hspace{0.5cm}
+    \begin{minipage}[b]{0.45\linewidth}
+        \begin{figure}
+            \centering
+            \includegraphics[width=\textwidth]{../images/mnist-2.png}
+            \caption{Datensatz der Klasse \enquote{2}; $\SI{28}{\pixel} \times \SI{28}{\pixel}$}
+            \label{fig:spline}
+        \end{figure}
+    \end{minipage}
+\end{frame}
+
+\begin{frame}{ImageNet}
+    \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth,height=0.7\textheight,keepaspectratio]{../images/prototypes-thomas-deselaers.jpg}
+        \caption{Image by Thomas Deselaers\newline\num{21841}~Synsets, \num{14197122} Bilder}
+        \label{fig:image-net}
     \end{figure}
 \end{frame}
 
@@ -70,6 +78,7 @@
                 \item Verhältnis: Temperatur in K
                 \item Absolut: Anzahl Personen
             \end{itemize}
+        \item Zeitreihen, Mengenwertige Daten
         \item Datenmenge: \enquote{There is no data like more data}
     \end{itemize}
 
@@ -78,8 +87,8 @@
 
 \begin{frame}{Preprocessing / Feature extraction}
     \begin{itemize}
-        \item Wie bekomme ich meine Features?
-        \item Bilder: Pixel-Werte für jeden Farbkanal
+        \item Wie bekomme ich meine Features $X \in \mathbb{R}^n$?
+        \item Bilder: Pixel-Werte
         \begin{itemize}
             \item Kleiner Skalieren? Rotieren?
             \item Farbraum? (z.B. RGB, HSV, HSL, HSI)
@@ -105,7 +114,7 @@
     \toprule
     ~          & ~       & \multicolumn{2}{c}{Trainingsfehler}\\
     ~          & ~       & \Frowny      & \Smiley     \\\midrule
-    \multirow{2}{*}{\rotatebox[origin=c]{90}{\parbox{0.9cm}{Test-\newline fehler}}} & \Frowny & Klassifizierer; mehr Trainingsdaten & Overfitting \\
+    \multirow{2}{*}{\rotatebox[origin=c]{90}{\parbox{0.9cm}{Test-\newline fehler}}} & \Frowny & Verfahren ändern; bessere Daten & Overfitting \\
     ~          & \Smiley & Programmierfehler                                     & Perfekt     \\
     \bottomrule
     \end{tabular}
@@ -124,6 +133,11 @@
 \end{frame}
 
 \section{Tools}
+\subsection{Amazon Mechanical Turk}
+
+\subsection{Amazon Mechanical Turk}
+\framedgraphic{Amazon Mechanical Turk}{../images/Racknitz_-_The_Turk_3.jpg}
+
 \subsection{sklearn}
 \framedgraphic{sklearn}{../images/peekaboo-vision-blogspot-de.png}
 
@@ -140,7 +154,7 @@
 
 \section{Weiteres}
 \subsection{Anwendungen}
-\begin{frame}{Anwendungen}
+\begin{frame}{Anwendungen: Fotos}
     \begin{figure}[ht]
         \begin{minipage}[b]{0.45\linewidth}
             \begin{itemize}
@@ -175,3 +189,53 @@
         \end{minipage}
     \end{figure}
 \end{frame}
+
+\begin{frame}{Anwendungen: Symbolerkennung}
+    \begin{figure}[ht]
+        \begin{minipage}[b]{0.45\linewidth}
+            \begin{itemize}
+                \item \href{http://write-math.com}{write-math.com}
+                \item Klassifikation (378~Klassen)
+                \begin{itemize}
+                    \item Hauptsächlich mathematische Symbole
+                    \item \num{272427}~Datensätze von \num{2188}~Benutzern
+                \end{itemize}
+            \end{itemize}
+            \vspace{2cm}
+        \end{minipage}
+        \hspace{0.5cm}
+        \begin{minipage}[b]{0.45\linewidth}
+            \centering
+                \begin{figure}[H]
+                    \includegraphics[height=4cm]{../images/handwritten-symbol}
+                    \caption{On-line Daten}
+                    \label{fig:Klassifikation}
+                \end{figure}
+        \end{minipage}
+    \end{figure}
+\end{frame}
+
+
+% http://www.win-vector.com/blog/2013/04/data-science-machine-learning-and-statistics-what-is-in-a-name/
+% http://statweb.stanford.edu/~tibs/stat315a/glossary.pdf
+% https://www.quora.com/What-is-the-difference-between-Data-Analytics-Data-Analysis-Data-Mining-Data-Science-Machine-Learning-and-Big-Data-1
+% http://stats.stackexchange.com/questions/5026/what-is-the-difference-between-data-mining-statistics-machine-learning-and-ai
+% https://www.researchgate.net/post/What_is_the_difference_between_machine_learning_and_data_mining
+% \begin{frame}{Machine Learning vs Statistik}
+%     \begin{figure}[ht]
+%         \begin{minipage}[b]{0.45\linewidth}
+%             \textbf{Machine Learning}
+%             \begin{itemize}
+%                 \item Pragmatisch: Wenn es funktioniert, ist es egal ob das
+%                       Modell korrekt ist.
+%             \end{itemize}
+%         \end{minipage}
+%         \hspace{0.5cm}
+%         \begin{minipage}[b]{0.45\linewidth}
+%             \textbf{Statistik}
+%             \begin{itemize}
+%                 \item Mathematisch: Das Modell muss korrekt sein.
+%             \end{itemize}
+%         \end{minipage}
+%     \end{figure}
+% \end{frame}
