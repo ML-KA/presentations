@@ -2,7 +2,9 @@
 
 * 16.07.2015, 17:30: [Kick-Off Meeting](https://github.com/ML-KA/presentations/raw/master/2015-07/LaTeX/2015-07-ml-kick-off.pdf)
 * 15.10.2015, 15:00: [Gründungstreffen](https://github.com/ML-KA/presentations/raw/master/2015-10/Gruendungstreffen/LaTeX/2015-10.pdf)
-* 28.10.2015, 19:15???: Erste Vorträge
+* 28.10.2015, 19:15:
+    * [Grundlagen des maschinellen Lernens](https://github.com/ML-KA/presentations/raw/master/2015-10/Vortrag-Martin/LaTeX/Vortrag-Martin.pdf)
+    * [Pixelweise Klassifikation mit tiefen Neuronalen Netzwerken](https://github.com/ML-KA/presentations/raw/master/2015-10/Vortrag-Marvin/2015-07.pdf)
 
 
 ## Empfehlungen für Vorträge
