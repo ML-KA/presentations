@@ -1,4 +1,4 @@
-SOURCE = 5-min-vorstellung
+SOURCE = ml-intro
 
 make:
 	#latexmk -pdf -pdflatex="pdflatex -interactive=nonstopmode" -use-make $(SOURCE).tex
